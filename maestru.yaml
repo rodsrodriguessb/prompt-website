@@ -1,0 +1,8 @@
+# maestru.yaml - Maestru project configuration
+
+processes:
+  setup:
+    command: npm install
+  run:
+    command: npm run dev
+    port: 3000

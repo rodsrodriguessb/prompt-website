@@ -1,0 +1,22 @@
+maestru: "0.4"
+
+allowedAuthors: [developer]
+
+templates:
+  work-item:
+    enforced: true
+    list:
+      - user-story-v1
+      - requirement-v1
+      - bug-v1
+      - task-v1
+
+  work-spec:
+    enforced: true
+    list:
+      - implementation-plan-v1
+      - research-v1
+      - testing-plan-v1
+      - diagrams-v1
+      - wireframes-v1
+      - implementation-plan-v2

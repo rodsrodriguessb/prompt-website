@@ -1,0 +1,8 @@
+[build]
+buildCommand = "npm run -w apps/api build"
+watchPatterns = ["apps/api/**", "packages/**", "package.json"]
+
+[deploy]
+startCommand = "node apps/api/dist/index.js"
+preDeployCommand = "cd apps/api && npx drizzle-kit migrate"
+healthcheckPath = "/api/health"

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(maestru *)",
+      "Bash(npm install *)",
+      "Bash(npm run dev *)",
+      "Bash(npm run build *)",
+      "Bash(npm run test *)",
+      "Bash(npx drizzle-kit *)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}
