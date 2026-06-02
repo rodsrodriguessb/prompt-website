@@ -1,17 +1,18 @@
-import { Hero } from './sections/Hero';
-import { Mission } from './sections/Mission';
-import { Partners } from './sections/Partners';
-import { Events } from './sections/Events';
-import { Footer } from './sections/Footer';
+import { Routes, Route } from 'react-router-dom';
+import { Nav } from './components/Nav';
+import { ScrollManager } from './components/ScrollManager';
+import { Home } from './pages/Home';
+import { PastEvents } from './pages/PastEvents';
 
 export default function App() {
   return (
     <>
-      <Hero />
-      <Mission />
-      <Partners />
-      <Events />
-      <Footer />
+      <ScrollManager />
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/past-events" element={<PastEvents />} />
+      </Routes>
     </>
   );
 }

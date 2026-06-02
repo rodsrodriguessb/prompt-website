@@ -32,6 +32,11 @@
     text-rendering: optimizeLegibility;
   }
 
+  /* Offset anchored sections so they clear the sticky nav */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+
   img {
     display: block;
     max-width: 100%;
@@ -77,6 +82,13 @@
     pointer-events: none;
     -webkit-mask-image: radial-gradient(ellipse at center, #000 35%, transparent 78%);
     mask-image: radial-gradient(ellipse at center, #000 35%, transparent 78%);
+  }
+
+  /* Section divider — thin rainbow rule that fades to transparent at both ends */
+  .grad-rule {
+    background: var(--grad);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
   }
 }
 
