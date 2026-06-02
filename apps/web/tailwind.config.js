@@ -4,22 +4,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: '#FAFAF8',
-        charcoal: '#1a1a1a',
-        gold: {
-          50: '#fdfcf7',
-          100: '#faf6e8',
-          200: '#f4ebc8',
-          300: '#ebdba0',
-          400: '#d4b85a',
-          500: '#c9a227',
-          600: '#b89223',
-          700: '#96751d',
-        },
+        // Prompt Lisbon brand tokens
+        ink: '#131316',
+        'ink-soft': '#4a4a52',
+        'ink-faint': '#8a8a93',
+        hair: '#e8e8ea',
+        'hair-soft': '#f0f0f1',
+        'events-band': '#fcfcfc',
       },
       fontFamily: {
-        serif: ['Lora', 'Georgia', 'serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        serif: ['"Bodoni Moda"', 'Georgia', '"Times New Roman"', 'serif'],
+        sans: ['"Hanken Grotesk"', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['ui-monospace', '"SF Mono"', 'Menlo', 'monospace'],
+      },
+      boxShadow: {
+        cta: '0 14px 34px -14px rgba(19,19,22,0.55)',
+        embed: '0 30px 70px -40px rgba(19,19,22,0.22)',
       },
     },
   },

@@ -1,3 +1,107 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    /* The rainbow gradient is the single brand accent */
+    --grad: linear-gradient(
+      100deg,
+      #ff2e9a 0%,
+      #ff7a1a 17%,
+      #ffd23d 33%,
+      #4fd16a 51%,
+      #1ec8c8 67%,
+      #2f6bff 84%,
+      #a23cf0 100%
+    );
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: #ffffff;
+    color: theme('colors.ink');
+    font-family: theme('fontFamily.sans');
+    line-height: 1.6;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@layer utilities {
+  /* Gradient text — used for "next", the 01/02/03 numerals, etc. */
+  .grad-text {
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  /* Solid gradient fill — embed icon, footer dot */
+  .grad-fill {
+    background: var(--grad);
+  }
+
+  /* Logos shipped on a white background blend cleanly onto the page */
+  .logo-blend {
+    mix-blend-mode: multiply;
+  }
+
+  /* 1.5px rainbow hairline border via layered backgrounds */
+  .grad-border {
+    border: 1.5px solid transparent;
+    background-image: linear-gradient(#fff, #fff), var(--grad);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  /* Faint dotted grid texture so the empty embed reads as a placeholder */
+  .placeholder-grid::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(theme('colors.hair') 1px, transparent 1px);
+    background-size: 26px 26px;
+    opacity: 0.5;
+    pointer-events: none;
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 35%, transparent 78%);
+    mask-image: radial-gradient(ellipse at center, #000 35%, transparent 78%);
+  }
+}
+
+/* Entrance + ambient motion — disabled under prefers-reduced-motion */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+
+  .floaty {
+    animation: floaty 7s ease-in-out infinite;
+  }
+  @keyframes floaty {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-9px);
+    }
+  }
+}
