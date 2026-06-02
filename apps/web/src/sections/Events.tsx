@@ -4,7 +4,7 @@ export function Events() {
   return (
     <section
       id="events"
-      className="border-t border-hair-soft bg-events-band py-[clamp(80px,13vw,150px)] text-center"
+      className="bg-events-band py-[clamp(80px,13vw,150px)] text-center"
     >
       <div className="mx-auto w-full max-w-[1080px] px-6">
         <Reveal className="mb-[clamp(40px,6vw,64px)] flex flex-col items-center gap-[18px]">

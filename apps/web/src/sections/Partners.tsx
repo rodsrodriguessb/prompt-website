@@ -4,7 +4,7 @@ export function Partners() {
   return (
     <section
       id="partners"
-      className="border-t border-hair-soft py-[clamp(58px,9vw,96px)] text-center"
+      className="py-[clamp(58px,9vw,96px)] text-center"
     >
       <div className="mx-auto w-full max-w-[1080px] px-6">
         <Reveal
