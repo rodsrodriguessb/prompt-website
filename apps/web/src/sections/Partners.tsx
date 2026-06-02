@@ -22,7 +22,7 @@ export function Partners() {
             aria-label="Oktogon Labs"
             className="inline-flex items-center opacity-90 transition duration-200 hover:-translate-y-0.5 hover:opacity-100"
           >
-            <img src="/assets/oktogon.png" alt="Oktogon Labs" className="h-[46px] w-auto" />
+            <img src="/assets/oktogon-mark.svg" alt="Oktogon Labs" className="h-[46px] w-auto" />
           </a>
 
           <span aria-hidden="true" className="hidden h-[42px] w-px bg-hair min-[680px]:block" />

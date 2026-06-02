@@ -18,8 +18,8 @@ export function Footer() {
               </span>
             </div>
             <p className="text-[15px] leading-[1.65] text-ink-soft">
-              Conversations on AI &amp; prompting, hosted in Lisbon. Come for the talks, stay for the
-              people.
+              A pop-up series on the real ways AI is changing work and culture. Come for the demos,
+              stay for the people.
             </p>
           </div>
 
@@ -31,7 +31,7 @@ export function Footer() {
               </p>
               <div className="flex flex-col gap-3">
                 <a
-                  href="https://instagram.com/promptlisbon"
+                  href="https://www.instagram.com/prompt.lisbon/"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex w-fit items-center gap-[9px] text-[15.5px] text-ink no-underline transition-opacity duration-200 hover:opacity-55"
@@ -51,6 +51,17 @@ export function Footer() {
                   </svg>
                   Instagram
                 </a>
+                <a
+                  href="https://www.linkedin.com/showcase/prompt-lisbon/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex w-fit items-center gap-[9px] text-[15.5px] text-ink no-underline transition-opacity duration-200 hover:opacity-55"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-[17px] w-[17px]">
+                    <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.22.8 24 1.77 24h20.45c.97 0 1.78-.78 1.78-1.73V1.73C24 .77 23.19 0 22.22 0z" />
+                  </svg>
+                  LinkedIn
+                </a>
               </div>
             </div>
 
@@ -60,7 +71,7 @@ export function Footer() {
               </p>
               <div className="flex flex-col gap-3">
                 <a
-                  href="mailto:hello@promptlisbon.com"
+                  href="mailto:hello@oktogon.io"
                   className="inline-flex w-fit items-center gap-[9px] text-[15.5px] text-ink no-underline transition-opacity duration-200 hover:opacity-55"
                 >
                   <svg
@@ -75,7 +86,7 @@ export function Footer() {
                     <rect x="3" y="5" width="18" height="14" rx="2.5" />
                     <path d="m3.5 6.5 8.5 6 8.5-6" />
                   </svg>
-                  hello@promptlisbon.com
+                  hello@oktogon.io
                 </a>
               </div>
             </div>

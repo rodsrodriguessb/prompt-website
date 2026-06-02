@@ -32,6 +32,11 @@
     text-rendering: optimizeLegibility;
   }
 
+  /* Offset anchored sections so they clear the sticky nav */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+
   img {
     display: block;
     max-width: 100%;

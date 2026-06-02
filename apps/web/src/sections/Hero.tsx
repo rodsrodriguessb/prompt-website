@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <header className="relative flex min-h-[100svh] flex-col items-center justify-center px-6 pb-16 pt-[88px] text-center">
+    <section className="relative flex min-h-[calc(100svh-4rem)] flex-col items-center justify-center px-6 pb-16 pt-16 text-center">
       <img
         src="/assets/symbol.png"
         alt="Prompt Lisbon symbol — a rainbow gradient swirl"
@@ -12,7 +12,7 @@ export function Hero() {
       </h1>
 
       <p className="mt-[clamp(22px,3.4vw,32px)] text-[clamp(12px,1.9vw,15px)] font-semibold uppercase tracking-[0.3em] text-ink-soft">
-        Conversations shape what&rsquo;s <span className="grad-text">next</span>
+        Conversations shape what&rsquo;s next
       </p>
 
       <div className="mt-[clamp(38px,5vw,52px)]">
@@ -37,6 +37,6 @@ export function Hero() {
         <span>Scroll</span>
         <span className="h-[38px] w-px bg-gradient-to-b from-ink-faint to-transparent" />
       </div>
-    </header>
+    </section>
   );
 }
