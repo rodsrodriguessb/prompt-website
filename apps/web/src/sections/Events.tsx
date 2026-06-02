@@ -1,4 +1,5 @@
 import { Reveal } from '../components/Reveal';
+import { MembrzEvents } from '../components/MembrzEvents';
 
 export function Events() {
   return (
@@ -20,44 +21,13 @@ export function Events() {
           </p>
         </Reveal>
 
-        {/*
-          Calendar embed slot. Replace the inner content below with the real
-          calendar widget (e.g. Luma / Google Calendar iframe); keep the framed
-          800 × 600 container as the slot.
-        */}
+        {/* Membrz events widget, framed by the brand rainbow hairline */}
         <Reveal
           role="region"
-          aria-label="Events calendar embed area"
-          className="placeholder-grid grad-border relative mx-auto mt-[clamp(42px,6vw,64px)] flex min-h-[600px] w-full max-w-[800px] flex-col items-center justify-center gap-5 overflow-hidden rounded-[20px] bg-white p-10 shadow-embed"
+          aria-label="Upcoming Prompt Lisbon events"
+          className="grad-border relative mx-auto mt-[clamp(42px,6vw,64px)] min-h-[360px] w-full max-w-[800px] overflow-hidden rounded-[20px] bg-[#FCFCFB] p-4 text-left shadow-embed sm:p-6"
         >
-          <div className="grad-fill relative z-[1] grid h-[58px] w-[58px] place-items-center rounded-2xl">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#fff"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-7 w-7"
-            >
-              <rect x="3" y="4.5" width="18" height="16" rx="2.5" />
-              <path d="M3 9h18M8 2.5v4M16 2.5v4" />
-            </svg>
-          </div>
-
-          <span className="relative z-[1] text-xs font-semibold uppercase tracking-[0.22em] text-ink-faint">
-            Calendar embed area
-          </span>
-          <p className="relative z-[1] font-serif text-[clamp(22px,3vw,27px)] font-medium">
-            A live events calendar will live here
-          </p>
-          <p className="relative z-[1] max-w-[38ch] text-[15px] leading-[1.6] text-ink-soft">
-            A third-party calendar widget will be embedded in this space, listing every upcoming
-            Prompt Lisbon gathering.
-          </p>
-          <code className="relative z-[1] mt-1.5 rounded-lg border border-hair bg-[#f5f5f6] px-[14px] py-2 font-mono text-[12.5px] text-ink-faint">
-            &lt;!-- calendar widget · 800 × 600 --&gt;
-          </code>
+          <MembrzEvents />
         </Reveal>
       </div>
     </section>
