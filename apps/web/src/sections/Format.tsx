@@ -3,23 +3,23 @@ import { Reveal } from '../components/Reveal';
 const FORMAT = [
   {
     num: '01',
-    title: 'Real work, not theory',
-    body: 'Short talks and live examples from people using AI in their actual work. What changed, what improved, what became weird, what still needs a human eye.',
+    title: 'Real work, real careers',
+    body: 'Talks and live demos from people using AI in their actual work — what changed in their craft, their team, their career, and what still needs a human.',
   },
   {
     num: '02',
-    title: 'One theme, many practices',
-    body: 'Each event explores one field through different angles: design, music, marketing, retail, education, culture, operations and more.',
+    title: 'One theme, every angle',
+    body: 'Each edition takes on one field — design, music, marketing, retail, education, culture — through the people actually doing it.',
   },
   {
     num: '03',
-    title: 'A room to exchange',
-    body: 'Less conference, more gathering. Space to ask questions, compare workflows, share tools, meet people and leave with ideas you can actually try.',
+    title: 'Tech meets culture',
+    body: 'Less conference, more gathering. Room to swap ideas and tools — and every night closes with live music and a live act.',
   },
   {
     num: '04',
-    title: 'Around Lisbon',
-    body: 'Every edition happens in a different place in the city: studios, galleries, shops, venues, schools, coworks and cultural spaces. AI meets the people already making things happen.',
+    title: 'Rooted in Lisbon',
+    body: 'A city fast becoming one of Europe’s most exciting places to build with AI — and a tech-and-culture scene we’re here to grow.',
   },
 ];
 

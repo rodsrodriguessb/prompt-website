@@ -18,8 +18,8 @@ export function Footer() {
               </span>
             </div>
             <p className="text-[15px] leading-[1.65] text-ink-soft">
-              A pop-up series on the real ways AI is changing work and culture. Come for the demos,
-              stay for the people.
+              A cult-tech series where tech meets culture — AI, careers and live music, in Lisbon.
+              Come for the demos, stay for the night.
             </p>
           </div>
 
