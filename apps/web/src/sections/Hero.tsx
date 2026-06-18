@@ -12,7 +12,7 @@ export function Hero() {
       </h1>
 
       <p className="mt-[clamp(22px,3.4vw,32px)] text-[clamp(12px,1.9vw,15px)] font-semibold uppercase tracking-[0.3em] text-ink-soft">
-        Where tech meets culture — live in Lisbon
+        AI Tech meets Culture
       </p>
 
       <div className="mt-[clamp(38px,5vw,52px)]">
