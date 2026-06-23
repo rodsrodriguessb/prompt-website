@@ -25,7 +25,7 @@ export function Events() {
         <Reveal
           role="region"
           aria-label="Upcoming Prompt Lisbon events"
-          className="grad-border relative mx-auto mt-[clamp(42px,6vw,64px)] min-h-[360px] w-full max-w-[800px] overflow-hidden rounded-[20px] bg-[#FCFCFB] p-4 text-left shadow-embed sm:p-6"
+          className="grad-border relative mx-auto mt-[clamp(42px,6vw,64px)] min-h-[360px] w-full max-w-[500px] overflow-hidden rounded-[20px] bg-[#FCFCFB] p-4 text-left shadow-embed sm:p-6"
         >
           <MembrzEvents />
         </Reveal>
