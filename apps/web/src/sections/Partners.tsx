@@ -48,7 +48,8 @@ export function Partners() {
           >
             <img src="/assets/nest.png" alt="The Nest Lisbon" className="h-[80px] w-auto" />
           </a>
-          <a
+          {/* 351 Startups — hidden until partnership is confirmed; re-enable to show. */}
+          {/* <a
             href="https://351startups.com"
             target="_blank"
             rel="noreferrer"
@@ -56,7 +57,7 @@ export function Partners() {
             className="inline-flex items-center opacity-75 transition duration-200 hover:-translate-y-0.5 hover:opacity-100"
           >
             <img src="/assets/351.jpeg" alt="351 Startups" className="h-[80px] w-auto" />
-          </a>
+          </a> */}
           <a
             href="https://instagram.com/tataoim"
             target="_blank"
