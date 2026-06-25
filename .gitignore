@@ -33,3 +33,7 @@ coverage/
 
 # Chat image uploads (drag-and-drop)
 chat-uploads/
+
+# Design handoff materials (kept locally for reference, not committed)
+design_handoff_prompt_lisbon/
+apps/prompt-landing-page.zip
